@@ -17,7 +17,7 @@ docker run  -v "/home/username/electrumx:/data" \
     -e RPC_HOST=0.0.0.0 \
     -p 8000:8000 \
     -p 5001:50001 \
-    pivxfoundation/docker-electrumx:latest
+    pivxfoundation/docker-electrumx
 ```
 
 If there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in the `/data` volume it'll be used. If not, one will be generated for you.
