@@ -6,9 +6,10 @@ COPY ./VERSION /tmp
 
 RUN VERSION=$(cat /tmp/VERSION) && \
     chmod a+x /usr/local/bin/* && \
-    apk add --no-cache git build-base openssl && \
+    apk add --no-cache git build-base openssl wget && \
+    apk --update add --virtual build-dependencies libffi-dev openssl-dev python-dev py-pip build-base && \
     apk add --no-cache --repository http://nl.alpinelinux.org/alpine/edge/testing leveldb-dev && \
-    pip install aiohttp pylru plyvel && \
+    pip install aiohttp pylru plyvel construct quark-hash && \
     git clone -b $VERSION https://github.com/kyuupichan/electrumx.git && \
     cd electrumx && \
     python setup.py install && \
