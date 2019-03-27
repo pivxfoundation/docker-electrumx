@@ -1,5 +1,5 @@
 FROM python:3.7-alpine3.7
-LABEL maintainer="Luke Childs <lukechilds123@gmail.com>"
+LABEL maintainer="FarEast <fareast@pivx.org>"
 
 COPY ./bin /usr/local/bin
 COPY ./VERSION /tmp
