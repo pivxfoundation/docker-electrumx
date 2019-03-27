@@ -1,7 +1,7 @@
 ﻿
 # pivxfoundation/docker-electrumx
-
-[![Image Layers](https://images.microbadger.com/badges/image/pivxfoundation/electrumx.svg)](https://microbadger.com/images/pivxfoundation/docker-electrumx)
+[![Build Status](https://travis-ci.org/pivxfoundation/docker-electrumx.svg?branch=master)](https://travis-ci.org/pivxfoundation/docker-electrumx)
+[![Image Layers](https://images.microbadger.com/badges/image/pivxfoundation/docker-electrumx.svg)](https://microbadger.com/images/pivxfoundation/docker-electrumx)
 [![Docker Pulls](https://img.shields.io/docker/pulls/pivxfoundation/docker-electrumx.svg)](https://hub.docker.com/r/pivxfoundation/docker-electrumx/)
 
 > Run an Electrum server with one command
